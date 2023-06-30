@@ -133,7 +133,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(24, 6, 185, 0.8);
+  background: #ffffff;
   padding: 12px 0;
 }
 
@@ -152,7 +152,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 70px;
 }
 
 /*--------------------------------------------------------------
@@ -190,7 +190,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(65, 61, 61, 0.7);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -221,13 +221,14 @@ h6 {
 .navbar .active:before {
   visibility: visible;
   width: 100%;
+  background-color: rgb(68, 41, 224);
 }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: rgb(66, 66, 66);
 }
 
 .navbar .getstarted,
@@ -239,7 +240,7 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(63, 53, 53, 0.5);
 }
 
 .navbar .getstarted:hover,
@@ -321,7 +322,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: rgb(43, 43, 43);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -438,7 +439,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(45, 38, 82, 0.9) 0%, rgba(45, 4, 87, 0.9) 100%), url("../img/bg.jpg") center center no-repeat;
+  background: linear-gradient(85deg, rgba(3, 3, 116, 0.301) 0%, rgba(176, 183, 226, 0.9) 100%), url("../img/counts-bg.png") center center no-repeat;
+  /* background: url("../img/background/bg1.jpg"); */
   background-size: cover;
 }
 
@@ -1678,4 +1680,179 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+
+/* WA */
+
+
+.btn-floating {
+  position: fixed;
+  right: 25px;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: .2s;
+}
+
+
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-floating span {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+}
+
+.btn-floating:hover span {
+  display: inline-block;
+}
+
+.btn-floating:hover img {
+  margin-bottom: -2px;
+}
+
+.btn-floating.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 40px;
+  right: 40px;
+  background-color: #34af23;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.btn-floating.whatsapp:hover {
+  background-color: #1f7a12;
+}
+
+.btn-floating.facebook {
+  bottom: 85px;
+  background-color: #1876f3;
+  border: 2px solid #fff;
+}
+
+.btn-floating.facebook:hover {
+  background-color: #1876f3;
+}
+
+/* BUTTON POP UP */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 50%;
+  /* height: 30%; */
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #0044ff;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 100%;
+  }
+  .popup{
+    width: 100%;
+  }
+}
+
+
+
+/* SLIDER */
+
+.showcase {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.showcase .slider {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showcase .slider .item {
+  display: block;
+  float: left;
+  position: relative;
+  /* width: 150px;
+  height: 90px; */
+  line-height: 100px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.showcase .slider .item img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  -moz-transition: 0 linear left;
+  transition: 0 linear left;
+  opacity: 0.65;
+}
+
+.showcase .slider .item img:hover {
+  opacity: 1.0;
 }
