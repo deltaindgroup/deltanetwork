@@ -9,23 +9,37 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Load Require CSS -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font CSS -->
+  <!-- <link href="../assets/css/boxicon.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> -->
+  <!-- Load Tempalte CSS -->
+  <!-- <link rel="stylesheet" href="../assets/css/templatemo.css"> -->
+  <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <!-- Favicons -->
-  <link href="assets/img/logoicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/logoicon.png" rel="icon">
+  <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Techie - v4.9.1
@@ -37,25 +51,57 @@
 
 <body>
 
+  <!-- WA CS -->
+
+  <a href="https://wa.me/6285850102226?&text=Halo,%20saya%20ingin%20bertanya%20lebih%20lanjut%20mengenai%20..."
+    target="_blank">
+    <button class="btn-floating whatsapp">
+      <i class="fa fa-whatsapp" style="font-size:45px" aria-hidden="true"></i>
+      <i><span class="text-white whatsapp h4">Hubungi Kami</span></i>
+    </button>
+  </a>
+
+
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="index.html">
-        <img src="assets/img/logodelta.png" width="190" height="280" alt="" class="light-version-logo">
-      </a></h1>
+          <img src="../assets/img/logodelta.png" width="170" height="280" alt="" class="light-version-logo">
+        </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+      <!-- <a href="index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Promo!!! Pasang 3 bln awal gratis 1 bln</h2>
+          <div class="btn-wrap">
+            <a href="https://api.whatsapp.com/send?phone=6285850102226&text=Halo%20Admin,%20Saya%20ingin%20membeli%20paket%20wifi%20dari%20website%20deltanetwork.site%20"
+              class="btn-buy">PESAN SEKARANG</a>
+          </div>
+          <a class="close" href="#">&times;</a>
+          <!-- <div class="content">
+                Cooming Soon!!!
+            </div> -->
+        </div>
+      </div>
       <nav id="navbar" class="navbar">
+
+
+
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Produk</a></li>
-          <li class="dropdown"><a href="#"><span>Kerja Kami</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li> -->
+          <li><a href="#popup1" class="text-decoration-none">Promo</a></li>
+          <li><a class="nav-link scrollto" href="https://deltanetwork.site/#pricing">Paket</a></li>
+          <li><a class="nav-link scrollto" href="https://deltanetwork.site/#lokasi">Lokasi Area</a></li>
+          <li class="dropdown"><a href="#"><span>Bantuan & Dukungan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#about">Visi Misi</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=6285850102226&text=Halo%20Admin,%20Saya%20ingin%20bekerja%20sama%20dengan%20Delta.Net%20.">Kerjasama</a></li>
+              <li><a href="https://deltanetwork.site/#about">Pendaftaran Member</a></li>
+              <li><a href="https://deltanetwork.site/#portfolio">Pembayaran</a></li>
+              <!-- <li><a href="#about">About Us</a></li> -->
+              <li><a href="pasang-wifi-murah-dikediri.html">Blog</a></li>
+              <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+              <li><a href="https://deltanetwork.site/ v#portfolio">FAQ</a></li>
+              <!-- <li><a href="https://api.whatsapp.com/send?phone=6285850102226&text=Halo%20Admin,%20Saya%20ingin%20bekerja%20sama%20dengan%20Delta.Net%20.">Kerjasama</a></li> -->
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -67,14 +113,18 @@
               </li> -->
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="https://api.whatsapp.com/send?phone=6285850102226&text=">Contact</a></li>
-          <li><a class="getstarted scrollto" style="color:#ffe600" href="https://e.ebilling.id/billing/login.php">Login</a></li>
+          <li><a class="nav-link scrollto" href="https://api.whatsapp.com/send?phone=6285850102226&text=">Kontak</a>
+          </li>
+          <li><a class="getstarted scrollto" style="color:#ffe600" href="https://e.ebilling.id/billing/login.php">MY
+              MEMBER</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+
+<br>  
 
   <main id="main">
 
@@ -104,24 +154,24 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-12-detail.jpg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-12-detail.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.jpg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-10.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-11.jpg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-11.jpg" alt="">
                 </div>
 
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-6-detail.jpeg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-6-detail.jpeg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-8.jpg" alt="">
                 </div>
 
               </div>
@@ -131,22 +181,54 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Pasang wifi murah kediri</h3>
-              Pasang Wifi Unlimited Murah Tanpa Kuota Area Kota Kediri dan Kabupaten Kediri
+              <h3>10 Tips untuk Memperkuat Sinyal WiFi</h3>
+              kami akan memberikan 10 tips praktis yang dapat Anda terapkan untuk meningkatkan jangkauan dan kualitas sinyal WiFi di rumah Anda.
               <ul>
-                <li><strong>Kategori</strong>: Internet Murah di Kediri</li>
+                <li><strong>Kategori</strong>: Tips </li>
                 <li><strong>Area</strong>: Kediri - Kabupaten</li>
-                <li><strong>Blog date</strong>: 01 Januari 2023</li>
+                <li><strong>Blog date</strong>: 08 Juli 2023</li>
                 <li><strong>Project URL</strong>: <a href="#">www.deltanetworksolution.com</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h3>Pasang wifi murah di kediri</h3>
-              Siapa yang tidak tertarik dengan paket wifi Kediri dengan harga terjangkau? Harga suatu produk adalah pertimbangan utama bagi semua orang. Kategori murah selalu menjadi incaran bagi para konsumen. Bahkan tak jarang orang memilih harga yang tidak masuk akal untuk sebuah produk dan jasa dengan kualitas dan pelayanan jauh di bawah standar.
+              <h3>10 Tips untuk Memperkuat Sinyal WiFi di Rumah Anda</h3>
+              Dalam era digital ini, konektivitas WiFi menjadi kebutuhan penting bagi banyak orang. Namun, seringkali sinyal WiFi di rumah kita tidak mencapai ke seluruh area dengan kekuatan yang cukup. Untungnya, ada beberapa tips yang dapat membantu Anda memperkuat sinyal WiFi di rumah. Dalam artikel ini, kami akan memberikan 10 tips praktis yang dapat Anda terapkan untuk meningkatkan jangkauan dan kualitas sinyal WiFi di rumah Anda.
               <br><br>
-              Murah tidak selalu murahan, mahal tidak selalu eksklusif. Murah dan maha sebenarnya adalah strategi marketing dalam mempromosikan produk dan jasanya. Juga merupakan mindset konsumen. Ada yang lebih memilih kualitas daripada harga, ada yang sebaliknya. Masing-masing orang memiliki kepentingannya sendiri. Pertimbangan harga tentu disesuaikan dengan tingkat urgensi kebutuhan dari masing-masing konsumen.
+              <strong>1. Posisikan Router dengan Benar:</strong><br>
+              Posisi router sangat penting untuk memperkuat sinyal WiFi. Letakkan router Anda di pusat rumah dan hindari ditempatkan di dalam lemari atau di balik benda-benda besar. Pastikan juga tidak ada penghalang seperti tembok tebal atau peralatan elektronik yang dapat menghalangi sinyal.<br>
+              <br>
+              <strong>2. Perbarui Firmware Router:</strong><br>
+              Periksa apakah router Anda menggunakan firmware terbaru. Perbarui firmware jika tersedia, karena pembaruan ini biasanya memperbaiki bug dan meningkatkan kinerja router, termasuk sinyal WiFi.<br>
+              <br>
+              <strong>3. Gunakan Enkripsi yang Kuat:</strong><br>
+              Pastikan router Anda menggunakan enkripsi yang kuat seperti WPA2 atau WPA3. Enkripsi yang kuat akan melindungi jaringan WiFi Anda dari akses yang tidak sah dan dapat membantu mempertahankan kualitas sinyal.<br>
+              <br>
+              <strong>4. Ubah Channel WiFi:</strong><br>
+              Seringkali, sinyal WiFi yang lemah disebabkan oleh interferensi dengan jaringan WiFi tetangga. Cobalah mengubah saluran (channel) WiFi Anda untuk menghindari interferensi. Anda dapat melakukannya melalui pengaturan router.<br>
+              <br>
+              <strong>5. Tambahkan Repeater atau Range Extender:</strong><br>
+              Jika Anda memiliki area rumah yang sulit dijangkau oleh sinyal WiFi, pertimbangkan untuk menggunakan repeater atau range extender. Perangkat ini akan memperluas jangkauan WiFi Anda dengan menyalurkan ulang sinyal dari router ke area yang lebih jauh.<br>
+              <br>
+              <strong>6. Gunakan Antena Eksternal:</strong><br>
+              Beberapa router dilengkapi dengan antena internal yang mungkin tidak memiliki kinerja optimal. Pertimbangkan untuk menggunakan antena eksternal yang lebih kuat dan dapat disesuaikan untuk meningkatkan jangkauan dan kualitas sinyal.<br>
+              <br>
+              <strong>7. Hapus Gangguan Elektronik:</strong><br>
+              Peralatan elektronik seperti microwave, telepon nirkabel, atau peralatan Bluetooth dapat menyebabkan gangguan pada sinyal WiFi. Pastikan router Anda tidak terlalu dekat dengan peralatan ini untuk menghindari gangguan yang tidak perlu.<br>
+              <br>
+              <strong>8. Perhatikan Penggunaan Bandwidth:</strong><br>
+              Jika ada banyak perangkat yang terhubung ke jaringan WiFi Anda, pembagian bandwidth bisa menjadi masalah. Batasi penggunaan bandwidth di setiap perangkat atau gunakan fitur Quality of Service (QoS) pada router untuk memberikan prioritas pada aplikasi atau perangkat tertentu.<br>
+              <br>
+              <strong>9. Gunakan Powerline Adapter:</strong><br>
+              Jika sinyal WiFi Anda masih lemah meskipun telah mencoba tips di atas, Anda dapat mempertimbangkan menggunakan powerline adapter. Powerline adapter memanfaatkan kabel listrik rumah Anda untuk mentransmisikan sinyal internet, memberikan jangkauan yang lebih luas daripada WiFi tradisional.<br>
+              <br>
+              <strong>10. Upgrade Router:</strong><br>
+              Jika semua upaya di atas tidak berhasil memperkuat sinyal WiFi Anda, mungkin saatnya untuk mempertimbangkan untuk mengganti router Anda dengan model yang lebih baru dan lebih canggih. Router terbaru sering kali memiliki teknologi dan fitur yang dapat meningkatkan jangkauan dan kecepatan sinyal WiFi.<br>
+              
+
+
+              
               <br><br><strong>Tips Memilih Paket WiFi yang Tepat</strong><br><br>
               Penggunaan paket wifi untuk rumahan, pilihlah yang sesuai dengan bujet. Tidak perlu memaksa mengambil paket yang lebih mahal karena hanya digunakan sebatas kebutuhan konsumtif. Yang paling penting jaringan lancar untuk pemakaian sehari-hari. Dan bisa digunakan oleh seluruh anggota keluarga. Keperluan sekolah dan kuliah, keperluan pekerjaan, bisnis daring serta untuk komunikasi.
               <br><br>
@@ -172,14 +254,7 @@
               Paket Internet Rumah di Kediri - Bence - dan sekitarnya<br>
               <br><br><br>
 
-              #pasang wifi murah kediri
-              #Pasang Wifi Unlimited Murah Tanpa Kuota Area Kota Kediri Raya
-              #paket wifi Kediri dengan harga terjangkau
-              #Internet Murah Kediri 
-              #Tips Memilih Paket Wifi Kediri yang Terjangkau
-              #paket wifi Kediri dengan harga terjangkau
-              #layanan internet Kediri
-              #pasang WiFi di rumah, kantor, restoran maupun tempat usaha Anda di area Kediri.
+              #pasangwifiKediriMurah #PasangWifiUnlimitedKediri #WifiMurahKediriRaya #InternetMurahKediri #WifiTerjangkauKediri #LayananInternetKediri #WifiKediriBence #WifiKediriPesantren #WifiKediriKleco #WifiKediriBurengan #WifiKediriBetet #WifiKediriBawang #WifiKediriKandad #WifiKediriNgronggo #WifiKediriNgasisnan
             </div>
 
         </div>
@@ -275,20 +350,20 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 
 </body>
 
